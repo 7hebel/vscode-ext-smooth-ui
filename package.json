@@ -1,10 +1,14 @@
 {
   "name": "smoothui",
-  "displayName": "👁️ Smooth UI",
+  "displayName": "🪽 Smooth UI",
   "description": "Inject custom CSS and JS to make VSCode look much better and cleaner.",
   "version": "0.0.1",
   "publisher": "gental",
   "author": "7hebel",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/7hebel/vscode-ext-smooth-ui"
+  },
   "engines": {
     "vscode": "^1.75.0"
   },
