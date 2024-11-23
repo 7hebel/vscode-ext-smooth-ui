@@ -46,9 +46,6 @@ function activate(context) {
 			});
 
 		config.update('breadcrumbs.enabled', false, vscode.ConfigurationTarget.Global)
-
-	} else {
-		vscode.window.showInformationMessage('CSS import already exists.');
 	}
 }
 
