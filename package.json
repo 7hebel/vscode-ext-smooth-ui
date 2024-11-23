@@ -1,0 +1,37 @@
+{
+  "name": "smoothui",
+  "displayName": "👁️ Smooth UI",
+  "description": "Inject custom CSS and JS to make VSCode look much better and cleaner.",
+  "version": "0.0.1",
+  "publisher": "gental",
+  "author": "7hebel",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "extensionDependencies": [
+    "be5invis.vscode-custom-css"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8"
+  }
+}
