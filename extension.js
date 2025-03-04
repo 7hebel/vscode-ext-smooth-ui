@@ -50,15 +50,13 @@ function activate(context) {
         config.update('vscode_custom_css.imports', customCssImports, vscode.ConfigurationTarget.Global)
             .then(() => {
                 vscode.window.showInformationMessage('Custom CSS and JS import added successfully!');
+                run();
             }, (error) => {
                 vscode.window.showErrorMessage(`Failed to update settings: ${error.message}`);
             });
 
         config.update('breadcrumbs.enabled', false, vscode.ConfigurationTarget.Global);
-        
-        run();
     }
-
 }
 
 function deactivate() { }
