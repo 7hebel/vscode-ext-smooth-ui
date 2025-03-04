@@ -45,7 +45,9 @@ function activate(context) {
 				vscode.window.showErrorMessage(`Failed to update settings: ${error.message}`);
 			});
 
-		config.update('breadcrumbs.enabled', false, vscode.ConfigurationTarget.Global)
+		config.update('breadcrumbs.enabled', false, vscode.ConfigurationTarget.Global);
+
+		vscode.commands.executeCommand("extension.installCustomCSS");
 	}
 }
 

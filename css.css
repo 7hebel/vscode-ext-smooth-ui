@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('./Cascadia.ttf');
+}
+
 :root {
     --back: rgba(var(--vscode-editor-background), 0.1);
 }
@@ -35,7 +40,7 @@
 
 /* Change font. */
 .windows {
-    font-family: "Cascadia Code" !important;
+    font-family: "Cascadia Code Code" !important;
     font-weight: 500 !important;
 }
 
