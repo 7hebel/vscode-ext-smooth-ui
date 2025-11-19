@@ -2,7 +2,7 @@
   "name": "smoothui",
   "displayName": "🪽 Smooth UI",
   "description": "Inject custom CSS and JS to make VSCode look much better and cleaner.",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "publisher": "gental",
   "author": "7hebel",
   "repository": {

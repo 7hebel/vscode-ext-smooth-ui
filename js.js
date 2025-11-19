@@ -1,5 +1,3 @@
-// document.addEventListener('DOMContentLoaded', function () {
-
 const checkElement = setInterval(() => {
     const commandDialog = document.querySelector(".quick-input-widget");
     if (commandDialog) {
@@ -82,4 +80,3 @@ function handleEscape() {
         setTimeout(() => { element.click(); }, 300);
     }
 }
-// });

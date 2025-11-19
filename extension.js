@@ -43,13 +43,14 @@ function activate(context) {
 
     // Add the new CSS import if it's not already in the array
     if (!customCssImports.includes(cssPath) && !customCssImports.includes(jsPath)) {
+        customCssImports.filter(e => !e.includes('gental'));
+        
         customCssImports.push(cssPath);
         customCssImports.push(jsPath);
 
         // Update the settings with the modified array
         config.update('vscode_custom_css.imports', customCssImports, vscode.ConfigurationTarget.Global)
             .then(() => {
-                vscode.window.showInformationMessage('Custom CSS and JS import added successfully!');
                 run();
             }, (error) => {
                 vscode.window.showErrorMessage(`Failed to update settings: ${error.message}`);
@@ -65,3 +66,4 @@ module.exports = {
     activate,
     deactivate
 };
+
